@@ -2,4 +2,81 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 1.25rem;
+  color: #13183f;
+}
+
+.hero {
+  padding: 4rem 1.25rem;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.hero__content__text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #13183f;
+  margin-bottom: 1.5rem;
+}
+.hero__content__text p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #83869a;
+}
+.hero__image {
+  background-image: url("../assets/image-hero-mobile.png");
+  background-position: center center;
+  height: 20rem;
+}
+
+.courses {
+  padding: 4rem 1.25rem 5rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.courses__callout {
+  padding: 2rem;
+  color: white;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.0442);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1.75rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.btn--black {
+  background-color: #13183f;
+}
+.btn--orange {
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
 }/*# sourceMappingURL=styles.css.map */
