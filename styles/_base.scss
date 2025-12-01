@@ -61,6 +61,28 @@ body {
         border-radius: 1rem;
         @include card-shadow;
     }
+
+    &__card {
+        padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+        box-shadow: 0 25px 50px rgb(6, 22, 141, 0.05);
+        border-radius: 1rem;
+        @include flex(column, flex-start, center);
+        gap: $spacing-300;
+
+        h3 {
+            @include text(1.25rem, 800, 1.2);
+            color: $blue-900;
+        }
+
+        p {
+            @include text(1rem, 700, 1.5);
+            color: $grey;
+        }
+
+        a {
+            @include text-
+        }
+    }
 }
 
 .btn {
