@@ -19,6 +19,7 @@ html, body {
   padding: 1rem 2rem;
   border-radius: 1.75rem;
   position: relative;
+  z-index: 20;
 }
 .btn--mobile {
   height: 3rem;
@@ -45,6 +46,7 @@ html, body {
   left: 0;
   background: hsl(0, 0%, 100%);
   opacity: 0;
+  border-radius: 1.75rem;
   transition: opacity 0.2s;
 }
 .btn--orange:hover::after {
@@ -68,6 +70,7 @@ html, body {
   left: 0;
   background: hsl(0, 0%, 100%);
   opacity: 0;
+  border-radius: 1.75rem;
   transition: opacity 0.2s;
 }
 .btn--purple:hover::after {
