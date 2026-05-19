@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+footer {
+    background-color: $blue-900;
+    padding: $spacing-300 $spacing-250;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        height: $spacing-250;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: $spacing-300 $spacing-550;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        padding: $spacing-300 10rem;
+
+        img {
+            height: 1.75rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+header {
+    padding: $spacing-200 $spacing-250;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    img {
+        height: $spacing-250;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: $spacing-300 $spacing-550;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: $spacing-300 10rem;
+
+        img {
+            height: 1.75rem;
+        }
+    }
+}

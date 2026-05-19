@@ -1,0 +1,30 @@
+@use 'colors' as *;
+
+@mixin button-gradient($direction, $start, $end) {
+    background: $start; //Fallback
+    background: linear-gradient($direction, $start, $end);
+}
+
+@mixin hover-overlay {
+    &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: $white;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+    &:hover::after {
+        opacity: 0.5;
+    }
+}
+
+@mixin text($size, $weight, $line-height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}

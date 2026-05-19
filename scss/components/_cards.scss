@@ -1,0 +1,54 @@
+@use '../abstracts' as *;
+
+.content__card {
+    position: relative;
+    
+    img {
+        position: absolute;
+        // position: relative;
+        left: $spacing-400;
+        top: -$spacing-400;
+    }
+    
+    &__text {
+        background-color: $white;
+        padding: $spacing-800 $spacing-400 $spacing-500;
+        box-shadow: 0rem 1.625rem 3.125rem rgb(6, 22, 141, 0.05);
+        border-radius: 1rem;
+
+        h3 {
+            @include text(1.25rem, 800, 1.2);
+            color: $blue-900;
+        }
+
+        p {
+            padding: $spacing-300 0rem;
+            color: $grey;
+            @include text(1rem, 600, 1.5);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content__card__text p {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content__card {
+        max-width: 90%;
+        height: 100%;
+
+        &__text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                margin-top: auto;
+                align-self: flex-start;
+            }
+        }
+    }
+}
